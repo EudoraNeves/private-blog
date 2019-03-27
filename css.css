@@ -1,0 +1,254 @@
+::-webkit-scrollbar {
+    width: 7px;
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A50084;
+    border-left: 1px solid black;
+}
+
+::selection {
+    color: #A50084;
+    background: pink;
+}
+
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-image: -webkit-linear-gradient(bottom, #A50084, grey);
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+#header {
+    background: url(images/darkpink.jpg), url(images/leaf.png);
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    /*also looks cool: background-image: liner-gradient(#A50084, #000000)*/
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-others {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.head-title {
+    text-transform: uppercase;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 51px;
+    float: left;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+
+#profileImg {
+    width: 80px;
+    height: 80px;
+    border: 10px groove #A50084;
+    border-radius: 100%;
+    box-shadow: 8px -5px 3px #A50084, -10px 5px 3px #A50084;
+    margin-left: auto;
+    display: none;
+}
+
+.head-nav-menu {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.head-nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.head-nav-item {
+    text-transform: uppercase;
+    width: 150px;
+    text-align: center;
+    padding-top: 11px;
+    float: left;
+    transition: background-color 1s ease-in;
+    -webkit-transition: background-color 1s ease-in;
+}
+
+.head-nav-item:hover {
+    border-bottom: 4px solid #A50084;
+    background-color: #131212;
+}
+
+.head-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.head-nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-right: 0px;
+
+}
+
+.head-menu-right {
+    float: right;
+}
+
+#greetings {
+    color: white;
+    width: 140px;
+}
+
+audio {
+    width: 30px;
+    height: 20px;
+    margin: 0px auto;
+    background: url(images/leaf.png);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+#head-menu-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+
+.empty {
+    display: flex;
+    width: 6px;
+    height: 6px;
+    background-color: #A50084;
+    margin: 1px;
+}
+
+
+
+
+footer {
+    color: white;
+    background-color: black;
+    bottom: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.lighter {
+    color: pink;
+}
+
+.darker {
+    color: #A50084;
+}
+
+.sitemap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sitemap-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 10px 0;
+    margin: 80px 80px 0;
+}
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #545454;
+}
+
+.sitemap-profile {
+    text-align: center;
+}
+.sitemap-profile-pic {
+    width: 80px;
+    text-align: center;
+}
+
+
+.myName {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.socialMedia {
+    text-align: center;
+}
+.socialMedia img {
+    width: 25px;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+
+.qq {
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content {
+    padding-top: 170px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    border: 0;
+}
+
+@media only screen and (max-width: 548px) {
+    #home {
+        background: pink;
+    }
+    .icon {
+        visibility: hidden;
+    }
+}

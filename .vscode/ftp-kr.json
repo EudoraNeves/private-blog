@@ -1,0 +1,16 @@
+{
+    "host": "ftp.filipeneves.net",
+    "username": "filisojt",
+    "password": "Eg0oplod!",
+    "remotePath": "public_html/haina/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
